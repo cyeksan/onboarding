@@ -1,6 +1,6 @@
 # Jetpack Compose Onboarding Library
 
-[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/cyeksan/onboarding/blob/master/LICENSE)
 
 https://user-images.githubusercontent.com/34041050/152655883-f41319c9-7339-4500-aea2-5bc7cc966847.mp4
 
