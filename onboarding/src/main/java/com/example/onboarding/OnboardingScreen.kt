@@ -11,8 +11,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.LifecycleCoroutineScope
 import androidx.navigation.NavController
-import com.example.onboarding.composables.Buttons
 import com.example.onboarding.composables.DotsIndicator
+import com.example.onboarding.composables.OnboardingButtons
 import com.example.onboarding.composables.OnboardingScreenImage
 import com.example.onboarding.composables.TitleAndContent
 import com.example.onboarding.properties.OnboardingProperties
@@ -40,12 +40,12 @@ fun OnboardingScreen(
     navController: NavController,
     lifecycleCoroutineScope: LifecycleCoroutineScope,
     pageNum: Int,
-    imageIdList: List<Int> = listOf(0,0,0,0,0),
+    imageIdList: List<Int> = listOf(0, 0, 0, 0, 0),
     titleList: List<String>,
     descriptionList: List<String>,
     skipTo: String,
     properties: OnboardingProperties,
-    ) {
+) {
     val state = remember { OnboardingState() }
     val pagerState = rememberPagerState()
     if (pageNum in 3..5) {
@@ -172,7 +172,7 @@ fun OnboardingScreen(
                                 .fillMaxSize(),
                             verticalArrangement = Arrangement.Bottom
                         ) {
-                            Buttons(
+                            OnboardingButtons(
                                 navController = navController,
                                 skipButtonName = properties.skipButtonName,
                                 nextButtonName = properties.nextButtonName,
@@ -190,7 +190,8 @@ fun OnboardingScreen(
 
                                     }
                                 },
-                            arrowDrawableId = properties.nextArrowIconDrawableId)
+                                arrowDrawableId = properties.nextArrowIconDrawableId
+                            )
                         }
                     }
                 }

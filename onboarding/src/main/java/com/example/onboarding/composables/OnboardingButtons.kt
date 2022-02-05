@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun Buttons(
+fun OnboardingButtons(
     navController: NavController,
     skipButtonName: String,
     nextButtonName: String,
@@ -29,7 +29,7 @@ fun Buttons(
         modifier = Modifier
             .fillMaxWidth()
             .wrapContentHeight()
-            .padding(24.dp, 36.dp),
+            .padding(24.dp, 16.dp, 24.dp, 48.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
     ) {
 
